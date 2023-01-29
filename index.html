@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <audio id="bell" src="bell.mp3"></audio>
+
+    <h1 class="text-center text-red-500 text-4xl lg:text-7xl mb-8">POMODORO</h1>
+    <main>
+      <div>
+        <h2 id="timer-title" class="text-center text-2xl mb-8">Temps de travail</h2>
+        <div class="text-center">
+          <h1 id="timer" class="border sm:w-80 w-60 mx-auto p-2 rounded mb-8">
+            25:00
+          </h1>
+          <button id="start" class="border p-2 mr-2">Démarrer</button>
+          <button id="stop" class="border p-2 mr-2">Arrêter</button>
+          <button id="reset" class="border p-2 mr-2">Réinitialiser</button>
+        </div>
+      </div>
+
+      <div class="mt-16">
+        <h2 class="text-center text-2xl mb-8">Temps de Repos</h2>
+        <div class="text-center">
+          <h1
+            id="break-time"
+            class="border sm:w-80 w-60 mx-auto p-2 rounded mb-8"
+          >
+            5
+          </h1>
+          <button id="increase-break-time" class="mr-8 border p-2">+</button>
+          <button id="decrease-break-time" class="border p-2">-</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
